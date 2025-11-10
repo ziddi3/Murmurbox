@@ -1,0 +1,4 @@
+from google import genai
+model = genai.GenerativeModel("gemini-pro")
+def reflect(prompt):
+    return model.generate_content(prompt).text
